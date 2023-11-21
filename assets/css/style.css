@@ -35,6 +35,11 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+mark {
+    background-color: rgb(0 204 153);
+    color: #fff;
+}
+
 .w-full {
     width: 100% !important;
 }
@@ -70,7 +75,7 @@ header {
 }
 
 .green-color {
-    color: rgb(0 204 153);
+    color: #00cc99;
 }
 
 .blue-color {
@@ -78,11 +83,19 @@ header {
 }
 
 .content-header {
-    width: 50%;
+    width: 45%;
     background-color: #fefefe;
     padding: 20px 30px 40px 30px;
-    margin-top: 50px;
+    margin-top: 100px;
     border-radius: 20px;
+    transition: .5s ease-in;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.content-header:hover {
+    margin-top: 70px;
+    transition: .5s ease;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .content-header h1,
@@ -126,3 +139,183 @@ h2 {
 .content-header button:hover::before {
     width: 250px;
 }
+
+.login-header {
+    background-color: #fff;
+    float: right;
+    width: 45%;
+    height: 600px;
+    margin-top: 100px;
+    padding: 20px 30px 40px 30px;
+    border-radius: 20px;
+    transition: .5s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.login-header:hover {
+    margin-top: 70px;
+    transition: .5s ease;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.flex-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.Email-form {
+    display: flex;
+    align-items: center;
+    background: #f4f4f4;
+    border-radius: 10px;
+    padding-left: 15px;
+    margin: 20px 0;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    gap: 0.4rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    text-shadow: 2px 2px 3px rgba(30, 48, 80, 0.5);
+    background: linear-gradient(15deg, #00cc99, #34a78a, #277d74, #263b5f, #1e3050, #263b5f, #277d74, #34a78a, #00cc99) no-repeat;
+    background-size: 300%;
+    background-position: left center;
+    transition: .3s ease;
+    color: rgba(255, 255, 255, 0.938);
+}
+
+.button:hover {
+    background-size: 320%;
+    background-position: right center;
+    cursor: pointer;
+}
+
+.main-box {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+/* Button in login-header _____Start______ */
+.main-box .box {
+    background-color: #f4f4f4;
+    padding: 10px 25px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    color: rgb(0, 0, 0);
+    fill: rgb(155, 153, 153);
+}
+
+.main-box button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-box button i {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-box button:hover .svg-wrapper {
+    transform: scale(1);
+    transition: .5s linear;
+}
+
+.main-box button:hover i {
+    transform: translateX(1.2em) scale(1);
+    fill: #fff;
+}
+
+.main-box button:hover span {
+    opacity: 0;
+    transition: .5s linear;
+}
+
+.main-box button:active {
+    transform: scale(0.95);
+}
+
+.button2 {
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: #090909;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    box-shadow: 6px 6px 12px #c5c5c5,
+               -6px -6px 12px #ffffff;
+  }
+  
+  .button2:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+               inset -4px -4px 12px #ffffff;
+  }
+  
+  .button2:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button2:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #00605a;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button2:hover {
+    color: #ffffff;
+    border: 1px solid #02554f;
+  }
+  
+  .button2:hover:before {
+    top: -35%;
+    background-color: #007e5f;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  
+  .button2:hover:after {
+    top: -45%;
+    background-color: #00cc99;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  
+/* Button in login-header _____End______ */

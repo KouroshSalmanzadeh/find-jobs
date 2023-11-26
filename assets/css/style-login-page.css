@@ -1,0 +1,51 @@
+body{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+}
+
+.wrapper{
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+canvas{
+position: relative;
+height:100%;
+top: 0;
+width:100%;
+}
+
+.introduction-canvas--overflow{
+width:100%;
+height:100%;
+position:absolute;
+top: 0;
+display:block;
+background: linear-gradient(to right bottom,rgb(0 32 65) 0,rgb(3 202 153 / 90%) 50%,rgb(11 147 112 / 90%) 100%);
+}
+
+.Container {
+  z-index: 1001;
+  position: absolute;
+  width: 100%;
+}
+
+.login-header {
+  width: 720px;
+}
+
+
+
+
+@media (max-width: 600px) {
+  .login-header {
+    width: 90%;
+  }
+  .introduction-canvas--overflow {
+    /* height: 100vh; */
+  }
+}

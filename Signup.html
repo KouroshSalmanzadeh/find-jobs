@@ -10,80 +10,108 @@
   <link rel="stylesheet" href="assets/css/all.min.css">
   <link rel="stylesheet" href="assets/css/util.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style-signup-page.css">
 </head>
 
 <body>
 
-  <div class="login-header">
-    <h4 class="blue-color">Login</h4>
-    <p>Log in now with your <mark>Username</mark> and <mark>password</mark> to achieve your career goal!</p>
+  <div class="Container flex-c">
+    <div class="login-header">
+      <h4 class="blue-color">Sign Up</h4>
+      <p>Sign up now with make <mark>Your name</mark> , <mark>Email</mark> and <mark>password</mark> to achieve your career goal!</p>
 
-    <form method="post" action="#">
-      <div class="Email-form">
-        <i class="fa-solid fa-user fa-beat-fade m-r-10 fa-xl" style="color: #00c899;"></i>
-        <input type="email" name="Email" placeholder="E-mail address" class="no-border">
+      <form method="post" action="#">
+        <div class="flex-sb w-full Margin-button">
+          <div class="First-name">
+            <i class="fa-solid fa-f fa-bounce green-color fa-xl m-r-5"></i><i class="fa-solid fa-n fa-bounce blue-color fa-xl m-r-10"></i>
+            <input type="text" name="First-name" placeholder="Your First Name" class="no-border">
+          </div>
+          <div class="Last-name m-t-30">
+            <i class="fa-solid fa-l fa-bounce green-color fa-xl m-r-5"></i><i class="fa-solid fa-n fa-bounce blue-color fa-xl m-r-10"></i>
+            <input type="text" name="last-name" placeholder="Your Last Name" class="no-border">
+          </div>
+        </div>
+        
+        <div class="Email-form">
+          <i class="fa-solid fa-user fa-beat-fade m-r-10 fa-xl" style="color: #00c899;"></i>
+          <input type="email" name="Email" placeholder="E-mail address" class="no-border">
+        </div>
+        <div class="Email-form">
+          <i class="fa-solid fa-unlock fa-flip m-r-10 fa-xl" style="color: #00cc99;"></i>
+          <input type="password" name="Password" id="Password" placeholder="password" class="no-border"><i class="fa-solid fa-eye-slash fa-lg blue-color m-r-10 hov-pointer" id="Show-pass" onclick="ShowPassword()"></i>
+        </div>
+        
+
+        <button class="button m-t-30 fs-18">Sign Up</button>
+      </form>
+
+      <div class="text-center m-t-50 fs-17">
+        <b class="blue-color">or</b>
       </div>
-      <div class="Email-form">
-        <i class="fa-solid fa-unlock fa-flip m-r-10 fa-xl" style="color: #00cc99;"></i>
-        <input type="password" name="Password" placeholder="password" class="no-border">
+
+      <div class="main-box">
+
+        <button class="box button2">
+          <div class="svg-wrapper-1">
+            <div class="svg-wrapper">
+              <i class="fa-brands fa-twitter fa-fade fs-35 m-r-20" style="color: #55abee;"></i>
+            </div>
+          </div>
+          <span>Twitter</span>
+        </button>
+
+        <button class="box button2">
+          <div class="svg-wrapper-1">
+            <div class="svg-wrapper">
+              <i class="fa-brands fa-facebook fa-fade fs-35 m-r-10" style="color: #4863a4;"></i>
+            </div>
+          </div>
+          <span>Facebook</span>
+        </button>
+
+        <button class="box button2">
+          <div class="svg-wrapper-1">
+            <div class="svg-wrapper">
+              <i class="fa-brands fa-linkedin fa-fade fs-35 m-r-10" style="color: #0077b5;"></i>
+            </div>
+          </div>
+          <span>Linkedin</span>
+        </button>
+
+        <button class="box button2">
+          <div class="svg-wrapper-1">
+            <div class="svg-wrapper">
+              <i class="fa-brands fa-apple fa-fade fs-35 m-r-25" style="color: #787878;"></i>
+            </div>
+          </div>
+          <span>Apple</span>
+        </button>
+
       </div>
 
-      <div class="text-right m-r-5">
-        <a class="green-color fs-13 f-bold" href="#">I forgot my password</a>
+      <div class="flex-c">
+        <p>Already have an account? </p><a href="Login.html" class="blue-color f-bold m-l-5"> You can login now!</a>
       </div>
-      <button class="button m-t-30 fs-18">Log in</button>
-    </form>
-
-    <div class="text-center m-t-50 fs-17">
-      <b class="blue-color">or</b>
-    </div>
-
-    <div class="main-box">
-
-      <button class="box button2">
-        <div class="svg-wrapper-1">
-          <div class="svg-wrapper">
-            <i class="fa-brands fa-twitter fa-fade fs-35 m-r-20" style="color: #55abee;"></i>
-          </div>
-        </div>
-        <span>Twitter</span>
-      </button>
-
-      <button class="box button2">
-        <div class="svg-wrapper-1">
-          <div class="svg-wrapper">
-            <i class="fa-brands fa-facebook fa-fade fs-35 m-r-10" style="color: #4863a4;"></i>
-          </div>
-        </div>
-        <span>Facebook</span>
-      </button>
-
-      <button class="box button2">
-        <div class="svg-wrapper-1">
-          <div class="svg-wrapper">
-            <i class="fa-brands fa-linkedin fa-fade fs-35 m-r-10" style="color: #0077b5;"></i>
-          </div>
-        </div>
-        <span>Linkedin</span>
-      </button>
-
-      <button class="box button2">
-        <div class="svg-wrapper-1">
-          <div class="svg-wrapper">
-            <i class="fa-brands fa-apple fa-fade fs-35 m-r-25" style="color: #787878;"></i>
-          </div>
-        </div>
-        <span>Apple</span>
-      </button>
 
     </div>
-
-    <div class="flex-c">
-      <p>Don't have an account? </p><a href="#sign-up" class="blue-color f-bold m-l-5"> You can sign up now!</a>
-    </div>
-
   </div>
-  
+  <div class="area">
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+
+
+
   <script src="assets/materialize/js/materialize.min.js" type="text/javascript"></script>
   <script src="assets/js/main.js" type="text/javascript"></script>
 </body>

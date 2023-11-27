@@ -65,7 +65,7 @@ mark {
 }
 
 .magnifier {
-    color: rgb(30, 48, 80);
+    color: #1e3050;
 }
 
 header {
@@ -320,7 +320,23 @@ h2 {
   
 /* Button in login-header _____End______ */
 
+.main-box-overflow{
+    width: 100%;
+    height: auto;
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.box-overflow {
+    float: right;
+    width: 600px;
+    height: 700px;
+    border-radius: 10px;
+    background-color: #eee;
+    transition: all .3s ease;
+    padding: 50px 20px;
+}
 
 
 

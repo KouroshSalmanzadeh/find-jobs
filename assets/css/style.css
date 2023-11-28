@@ -343,12 +343,132 @@ h2 {
     text-align: center;
 }
 
+.categories {
+    background-color: #fff;
+    float: right;
+    width: 45%;
+    height: 750px;
+    margin-top: 100px;
+    padding: 20px 30px 40px 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    transition: .5s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.categories:hover {
+    margin-top: 70px;
+    transition: all .5s ease;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.title-of-categories {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.categories .main-box-category {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.categories .main-box-category .box-category {
+    width: 45%;
+    height: 45%;
+    background-color: #fff;
+    float: right;
+    border-radius: 20px;
+    border: 2px solid #eeeff8;
+    transition: all .4s ease;
+    display: flex;
+}
+
+.categories .main-box-category .box-category .text-box-category {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.categories .main-box-category .box-category .text-box-category .t-b-c-div {
+    width: 85%;
+    height: 50%;
+}
+
+.categories .main-box-category .box-category:hover {
+    background-color: #1e3050;
+}
+
+.categories .main-box-category .box-category:hover h5, .categories .main-box-category .box-category:hover .blue-color { 
+    color: #fff;
+}
+
+/* Button for all pages   ____Start____ */
+.Mybutton {
+    width: 150px;
+    height: 3em;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: inherit;
+    border: 1px solid rgb(30, 48, 80);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+
+.Mybutton::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, rgb(0 204 153) 0%, #0fd850 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+
+}
+
+.Mybutton:hover::before {
+    width: 250px;
+}
+
+.Mybutton:hover {
+    transform: translateY(-2px);
+    color: rgb(255, 255, 255);
+}
+
+.Mybutton:active {
+    transform: translateY(-1px);
+
+  }
+/* Button for all pages   _____End_____ */
 
 
+/* transition display  ____Start____ */
+.categories .main-box-category .box-category .Mybutton {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.4s linear;
+}
 
-
-
-
+.categories .main-box-category .box-category:hover .Mybutton {
+    visibility: visible;
+    opacity: 1;
+}
+/* transition display  _____End_____ */
 
 
 

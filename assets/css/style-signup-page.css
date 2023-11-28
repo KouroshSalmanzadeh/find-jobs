@@ -8,8 +8,13 @@
 
 .login-header {
     width: 720px;
-    height: 700px;
-  }
+    height: 720px;
+    box-shadow: rgb(3 96 80) 0px 6px 12px -2px, rgb(8 133 113) 0px 3px 7px -3px;
+}
+
+.login-header:hover {
+    box-shadow: rgb(5 201 152) 0px 20px 30px -10px;
+}
 
 .area{
     background: rgba(30, 48, 80, 1);  

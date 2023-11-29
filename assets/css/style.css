@@ -481,7 +481,8 @@ h2 {
 @media (max-width: 480px) {
     .Container {
         width: 100%;
-        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
     }
     header {
         height: 100%;
@@ -489,24 +490,43 @@ h2 {
     .content-header{
         width: 90%;
     }
-    .login-header {
+    .categories {
         width: 90%;
         height: auto;
         margin-bottom: 50px;
     }
-    h1, h2 {
-        font-size: 45px;
-    }
-    .main-box {
+    .categories .main-box-category {
         display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: center;
-        margin: 100px 0;
     }
-    .main-box .box {
-        width: 70%;
+    .categories .main-box-category .box-category{
+        width: 100%;
+        height: 250px;
         margin: 10px 0;
-        padding: 25px 0;
+    }
+    .title-of-categories h4{
+        width: 55%;
+    }
+    .text-box-category {
+        display: flex !important;
+        justify-content: space-evenly !important;
+    }
+    .main-box-category .box-category .t-b-c-div{
+        margin-top: 20px;
+    }
+    .main-box-category .box-category .t-b-c-div i {
+        font-size: 65px;
+    }
+    .main-box-category .box-category .t-b-c-div h5 {
+        font-size: 18px;
+    }
+    .show-more {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 20px;
+    }
+    .show-more .Mybutton {
+        margin-left: 55px;
     }
 }

@@ -490,6 +490,12 @@ h2 {
     .content-header{
         width: 90%;
     }
+    .content-header h2 {
+        font-size: 35px;
+    }
+    .content-header h1 {
+        font-size: 45px;
+    }
     .categories {
         width: 90%;
         height: auto;

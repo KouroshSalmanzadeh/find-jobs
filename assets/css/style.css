@@ -17,7 +17,10 @@
 body {
     font-family: 'quicksand';
 }
-
+:root {
+    --blue-color: #1e3050;
+    --green-color: #00cc99;
+}
 .Container {
     width: 1600px;
     height: auto;
@@ -26,9 +29,11 @@ body {
 }
 
 .nav {
-    background-color: #00cc99;
+    background-color: var(--green-color);
 }
-
+.sidenav {
+    background-color: var(--blue-color);
+}
 .Btn {
     padding: 0 15px;
     border-radius: 10px;
@@ -75,11 +80,11 @@ header {
 }
 
 .green-color {
-    color: #00cc99;
+    color: var(--green-color);
 }
 
 .blue-color {
-    color: rgb(30, 48, 80);
+    color: var(--blue-color);
 }
 
 .content-header {

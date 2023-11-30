@@ -166,7 +166,28 @@
       width: 90%;
       height: auto;
     }
+    .Names {
+        display: flex;
+        flex-direction: column;
+    }
+    .Names .First-name {
+        width: 100%;
+    }
+    .Names .Last-name {
+        width: 100%;
+        margin-top: -3px;
+    }
+    .main-box {
+        margin: 30px 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;
+      }
+      .main-box .box {
+        width: 47%;
+      }
     .area {
-      height: 1100px;
+      height: 900px;
     }
   }

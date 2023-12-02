@@ -2238,10 +2238,19 @@
 ///////////////////////////////////////////////////////////
 */
 /* ------------------------------------ */
-.text-white {color: white;}
-.text-black {color: black;}
+
+:root {
+    --blue-color: #1e3050;
+    --green-color: #00cc99;
+}
+
+.text-white {color: white !important;}
+.text-black {color: black !important;}
 
 .text-hov-white:hover {color: white;}
+.text-hov-green:hover {color: var(--green-color) !important;}
+.text-hov-blue:hover {color: var(--blue-color) !important;}
+
 
 /* ------------------------------------ */
 .text-up {text-transform: uppercase;}

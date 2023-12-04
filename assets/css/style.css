@@ -619,7 +619,6 @@ header {
     border-radius: 50% !important;
     position: absolute !important;
     right: 0px !important;
-    color: var(--blue-color) !important;
     background-color: transparent !important;
     pointer-events: painted !important;
 }
@@ -638,6 +637,16 @@ header {
     background-color: transparent !important;
     border-bottom: 1px solid rgba(255, 255, 255, .5) !important;
     transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2) !important;
+}
+
+.search-box i {
+    color: var(--blue-color);
+    transition: all .5s ease-in-out !important;
+}
+
+.search-box:hover i {
+    color: var(--grey-background);
+    transition: all .5s ease-in-out !important;
 }
 
 /* Search box  ___End____ */
@@ -732,5 +741,46 @@ header {
 
     .show-more .Mybutton {
         margin-left: 55px;
+    }
+    .main-box-header {
+        width: 100%;
+        height: 1150px;
+        display: flex;
+    }
+    .main-box-header .box-header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .img-header {
+        width: 90%;
+        height: 50%;
+    }
+
+    .content-header {
+        width: 90%;
+        padding: 15px 30px;
+    }
+
+    .content-header .content-logo {
+        font-size: 60px;
+    }
+
+    .content-header .content-logo i {
+        font-size: 55px;
+        margin-left: -10px;
+        margin-right: 2px;
+    }
+
+    .content-header h5 {
+        font-size: 25px;
+    }
+
+    .content-header b {
+        font-size: 30px;
+    }
+
+    .main-box-search .Mybutton {
+        width: 90%;
     }
 }

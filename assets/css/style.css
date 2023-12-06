@@ -35,6 +35,10 @@
     border-radius: 11px;
 }
 
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #009f77;
+}
+
 body {
     font-family: 'quicksand';
 }
@@ -683,6 +687,45 @@ header {
 .main-box-search:hover .content-header {
     background-color: var(--grey-background);
 }
+
+/* Show box when scrolling  ____Start____*/
+.reveal {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+/* Show box when scrolling  ____End____*/
+
+
+/* show box when page is loading ___Start___ */
+.hide-box {
+    position: relative;
+    transform: translateY(70px);
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.active-box {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+}
+/* show box when page is loading ___End___ */
+
+
+
+
+
+
+
+
 
 
 

@@ -728,11 +728,10 @@ header {
 }
 /* show box when page is loading ___End___ */
 
-.main-box-companies {
+.general-box-companies {
     width: 95%;
     height: 700px;
-    transform: translateY(30px);
-    margin: 150px 0;
+    margin-top: 100px;
     background-color: #fff;
     padding: 20px 30px 40px 30px;
     border-radius: 20px;
@@ -740,16 +739,76 @@ header {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-.main-box-companies:hover {
-    transform: translateY(0);
+.general-box-companies:hover {
+    margin-top: 70px;
     transition: .5s ease;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-.main-box-companies .title-companies {
+.general-box-companies .title-companies {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+}
+
+.main-box-companies {
+    width: 100%;
+    height: 95%;
+    display: flex;
+}
+
+.main-box-companies .boxs-companies {
+    width: 80%;
+    height: 95%;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-box-companies .boxs-companies .box-company {
+    width: 390px;
+    height: 260px;
+    float: right;
+    background-color: #fbfbfb;
+    border: 2px solid var(--grey-background);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.main-box-companies .image-companies {
+    float: right;
+    width: 50%;
+    height: 90%;
+}
+
+.main-box-companies .image-companies img {
+    width: 100%;
+    height: 100%;
+}
+
+.box-company .image-logo {
+    width: 90%;
+    height: 80px;
+    border-radius: 15px;
+
+}
+
+.box-company .image-logo img {
+    width: 23.1%;
+    height: 100%;
+    border: 1px solid var(--grey-background);
+    border-radius: 15px;
+}
+
+.box-company .content-box-company {
+    width: 90%;
+    height: auto;
 }
 
 

@@ -79,6 +79,10 @@ mark {
     width: 100% !important;
 }
 
+.transition {
+    transition: all .4s ease;
+}
+
 .f-comfortaa {
     font-family: 'comfortaa';
     font-size: 30px;
@@ -775,6 +779,26 @@ header {
     background-color: #fbfbfb;
     border: 2px solid var(--grey-background);
     border-radius: 20px;
+    transition: all .4s ease;
+}
+
+.main-box-companies .boxs-companies .box-company:hover {
+    background-color: var(--blue-color);
+    border: 2px solid var(--green-color);
+}
+
+.main-box-companies .boxs-companies .box-company:hover p {
+    color: #fff;
+}
+
+.main-box-companies .boxs-companies .box-company:hover .image-logo {
+    transform: translateY(-40px);
+    transition: all .4s ease;
+}
+
+.main-box-companies .boxs-companies .box-company a {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
@@ -796,7 +820,7 @@ header {
     width: 90%;
     height: 80px;
     border-radius: 15px;
-
+    transition: all .4s ease;
 }
 
 .box-company .image-logo img {

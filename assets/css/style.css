@@ -47,6 +47,7 @@ body {
     --blue-color: #1e3050;
     --green-color: #00cc99;
     --grey-background: #F5F5F5;
+    --light-grey: #fbfbfb;
     --tranisition: all .4s ease;
 }
 
@@ -127,6 +128,10 @@ header {
 
 .grey-background {
     background-color: var(--grey-background);
+}
+
+.light-grey-background {
+    background-color: var(--light-grey);
 }
 
 .main-info-box {

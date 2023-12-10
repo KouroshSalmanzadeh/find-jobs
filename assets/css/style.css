@@ -134,6 +134,10 @@ header {
     background-color: var(--light-grey);
 }
 
+.light-grey-color {
+    color: var(--light-grey);
+}
+
 .main-info-box {
     width: 100%;
     height: 900px;
@@ -881,8 +885,12 @@ header {
     float: left;
     border-radius: 20px;
     transition: var(--tranisition);
+    border: 2px solid #fff;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
+    align-content: flex-end;
 }
 
 .boxs-news:hover {
@@ -958,6 +966,8 @@ header {
 }
 
 .accordion li .content-news-box span {
+    width: 80%;
+    overflow: hidden;
     position: absolute;
     z-index: 3;
     left: 50%;
@@ -985,6 +995,48 @@ header {
     visibility: visible;
 } 
 /* Accorion boxs for news section ____End____ */
+
+
+/* Swiper slider bullet   ___Start___ */
+
+.swiper-box {
+    display: flex;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px 0 5px;
+    border-radius: 100%;
+    background: var(--blue-color);
+    cursor: pointer;
+    transition: var(--tranisition);
+}
+
+.boxs-news:hover .swiper-slide {
+    background: #999999;
+}
+
+.boxs-news:hover .swiper-pagination-bullet-active {
+    width: 12px;
+    height: 12px;
+    background-color: var(--green-color);
+}
+
+/* Swiper slider bullet   ___End___ */
+
+
+
+
+
+
+
+
+
+
 
 
 

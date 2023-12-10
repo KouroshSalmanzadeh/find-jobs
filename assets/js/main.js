@@ -1,8 +1,8 @@
 // for side nav of home page at mobile ____Start_____
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, {});
-  });
+document.addEventListener('DOMContentLoaded', function () {
+  var elems = document.querySelectorAll('.sidenav');
+  var instances = M.Sidenav.init(elems, {});
+});
 // for side nav of home page at mobile ____End_____
 
 
@@ -32,8 +32,7 @@ function reveal() {
 
     if (elementTop < innerHeight - elementVisible) {
       reveals[i].classList.add("active");
-    }
-    else {
+    } else {
       reveals[i].classList.remove("active");
     }
   }
@@ -49,6 +48,32 @@ function loadPage() {
   for (var i = 0; i < hidebox.length; i++) {
     hidebox[i].classList.add("active-box");
 
-  }
-}
+  };
+};
 // show box when page is loading ___End___
+
+
+
+
+// const swiper_main = new Swiper('.swiper_main', {
+//   loop: true,                             
+//   pagination: {
+//       el: '.swiper-pagination',
+//       clickable: true,
+//   },                
+//   navigation: {                       
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev",
+//   },
+// })
+
+// function swiper() {
+//   const swipers = document.querySelectorAll(".swiper-slide");
+  
+//   for (var i = 0; i < swipers.length; i++) {
+//     addEventListener
+//       swipers[i].classList.add("swiper-bullet-active");
+//     });
+//   };
+// };
+

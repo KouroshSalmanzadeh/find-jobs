@@ -39,6 +39,8 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+window.addEventListener("DOMContentLoaded", reveal);
+
 // Show box when scrolling  ____End____
 
 // show box when page is loading ___Start___
@@ -52,28 +54,19 @@ function loadPage() {
 };
 // show box when page is loading ___End___
 
+function Myswiper() {
+  const swipers = document.querySelectorAll(".swiper-slide");
+
+  function show (elements) {
+    elements = elements.length ? elements : [elements];
+    for (let i of elements) {
+      i.addEventListener('click', function () {
+          i.classList.add('swiper-pagination-bullet-active');
+      });
+      }
+    }
+    show(swipers);
+  };
 
 
-
-// const swiper_main = new Swiper('.swiper_main', {
-//   loop: true,                             
-//   pagination: {
-//       el: '.swiper-pagination',
-//       clickable: true,
-//   },                
-//   navigation: {                       
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev",
-//   },
-// })
-
-// function swiper() {
-//   const swipers = document.querySelectorAll(".swiper-slide");
-  
-//   for (var i = 0; i < swipers.length; i++) {
-//     addEventListener
-//       swipers[i].classList.add("swiper-bullet-active");
-//     });
-//   };
-// };
 

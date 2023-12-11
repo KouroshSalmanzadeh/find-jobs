@@ -11,9 +11,10 @@
   <link rel="stylesheet" href="assets/css/util.css">
   <link rel="stylesheet" href="assets/css/style.css">
 
-
   <script src="assets/materialize/js/materialize.min.js" type="text/javascript" defer></script>
   <script src="assets/js/main.js" type="text/javascript" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js" defer></script>
+
 
 </head>
 
@@ -121,9 +122,9 @@
             employee You need.
           </p>
           <button class="m-t-50">Become a Corporate Member</button>
-  
+
         </div>
-  
+
         <div class="categories reveal">
           <div class="title-of-categories">
             <h4 class="blue-color"><b class="green-color">Explore</b> by Category</h4>
@@ -131,9 +132,9 @@
               <h6 class="blue-color f-bold">All Categories</h6><i
                 class="fa-solid fa-circle-chevron-right green-color m-l-10"></i>
             </a>
-  
+
           </div>
-  
+
           <div class="main-box-category">
             <div class="box-category">
               <a href="#" class="text-box-category h-full w-full">
@@ -147,7 +148,7 @@
                 </div>
               </a>
             </div>
-  
+
             <div class="box-category">
               <a href="#" class="text-box-category h-full w-full">
                 <div class="t-b-c-div m-l-40">
@@ -161,7 +162,7 @@
                 </div>
               </a>
             </div>
-  
+
             <div class="box-category">
               <a href="#" class="text-box-category h-full w-full">
                 <div class="t-b-c-div m-l-40">
@@ -174,7 +175,7 @@
                 </div>
               </a>
             </div>
-  
+
             <div class="box-category">
               <a href="#" class="text-box-category h-full w-full">
                 <div class="t-b-c-div m-l-40">
@@ -189,7 +190,7 @@
                 </div>
               </a>
             </div>
-  
+
           </div>
         </div>
       </div>
@@ -200,7 +201,8 @@
     <div class="Container flex-c">
       <div class="general-box-companies m-b-170 reveal">
         <div class="title-companies">
-          <h4 class="blue-color"><b class="green-color">Best</b> Companies to work <i class="fa-solid fa-circle-check green-color"></i></h4>
+          <h4 class="blue-color"><b class="green-color">Best</b> Companies to work <i
+              class="fa-solid fa-circle-check green-color"></i></h4>
           <a href="#" class="flex-baseline">
             <h6 class="blue-color f-bold">All Categories</h6><i
               class="fa-solid fa-circle-chevron-right green-color m-l-10"></i>
@@ -217,7 +219,8 @@
                 <div class="content-box-company blue-color">
                   <h6 class="f-bold fs-18 green-color">Technical Operations Teammate</h6>
                   <p class="m-t-10 m-b-15 transition">MCZ Group Insurance</p>
-                  <p class="grey-text">Working in our 'Technical Operations' unit for our Agency operating in the insurance sector...</p>
+                  <p class="grey-text">Working in our 'Technical Operations' unit for our Agency operating in the
+                    insurance sector...</p>
                 </div>
               </a>
             </div>
@@ -230,10 +233,11 @@
                 <div class="content-box-company blue-color">
                   <h6 class="f-bold fs-18 green-color">Technical Staff</h6>
                   <p class="m-t-10 m-b-15 transition">Mogoz Insurance Ltd.</p>
-                  <p class="grey-text">Technical personnel residing in Ankara Akyurt with a Segem certificate will be employed…</p>
+                  <p class="grey-text">Technical personnel residing in Ankara Akyurt with a Segem certificate will be
+                    employed…</p>
                 </div>
               </a>
-              
+
             </div>
 
             <div class="box-company">
@@ -244,7 +248,8 @@
                 <div class="content-box-company blue-color">
                   <h6 class="f-bold fs-18 green-color">Damage Specialist</h6>
                   <p class="m-t-10 m-b-15 transition">Beer Cuze Insurance</p>
-                  <p class="grey-text">Knowing how to use MA Office programs that can follow the damage processes of our insured…</p>
+                  <p class="grey-text">Knowing how to use MA Office programs that can follow the damage processes of our
+                    insured…</p>
                 </div>
               </a>
             </div>
@@ -257,7 +262,8 @@
                 <div class="content-box-company blue-color">
                   <h6 class="f-bold fs-18 green-color">Website programming company</h6>
                   <p class="m-t-10 m-b-15 transition">Meaningful life Group Inc.</p>
-                  <p class="grey-text">Working in the front-end and back-end programmer department is one of the needs...</p>
+                  <p class="grey-text">Working in the front-end and back-end programmer department is one of the
+                    needs...</p>
                 </div>
               </a>
             </div>
@@ -277,14 +283,15 @@
     <div class="Container flex-c">
       <div class="main-box-news m-t-50 reveal">
         <div class="title-news">
-          <h4 class="blue-color"><b class="green-color">Sectoral</b> <i class="fa-brands fa-neos blue-color"></i>ews</h4>
+          <h4 class="blue-color"><b class="green-color">Sectoral</b> <i class="fa-brands fa-neos blue-color"></i>ews
+          </h4>
           <a href="#" class="flex-baseline">
             <h6 class="blue-color f-bold">All Categories</h6><i
               class="fa-solid fa-circle-chevron-right green-color m-l-10"></i>
           </a>
         </div>
 
-        <div class="boxs-news swiper_main">
+        <div class="boxs-news">
           <ul class="accordion">
             <li>
               <a href="#">
@@ -359,13 +366,27 @@
             </li>
           </ul>
 
+
           <div class="swiper-box">
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
+
+            <!-- It's swiper does not worker in this project but it's here  ___Note Start___-->
+            <!-- <swiper-container class="mySwiper" space-between="30" pagination="true" pagination-clickable="true">
+              <swiper-slide>Slide 1</swiper-slide>
+              <swiper-slide>Slide 2</swiper-slide>
+              <swiper-slide>Slide 3</swiper-slide>
+              <swiper-slide>Slide 4</swiper-slide>
+              <swiper-slide>Slide 5</swiper-slide>
+              <swiper-slide>Slide 6</swiper-slide>
+            </swiper-container> -->
+            <!-- It's swiper does not worker in this project but it's here ___Note End___-->
+
+
+            <div class="swiper-slide swiper1" onclick="Myswiper()"></div>
+            <div class="swiper-slide swiper2"></div>
+            <div class="swiper-slide swiper3"></div>
+            <div class="swiper-slide swiper4"></div>
+            <div class="swiper-slide swiper5"></div>
+            <div class="swiper-slide swiper6"></div>
           </div>
         </div>
 
@@ -378,5 +399,8 @@
   </section>
   <!-- Section news  ____End____ -->
 
+
+
 </body>
+
 </html>

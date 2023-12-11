@@ -1026,6 +1026,10 @@ header {
     background-color: var(--green-color);
 }
 
+
+:host {
+    --swiper-theme-color: #000;
+}
 /* Swiper slider bullet   ___End___ */
 
 

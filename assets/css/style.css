@@ -140,10 +140,11 @@ header {
 
 .main-info-box {
     width: 100%;
-    height: 900px;
+    height: auto;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .info-box {
@@ -723,6 +724,7 @@ header {
     transform: translateY(0);
     opacity: 1;
 }
+
 /* Show box when scrolling  ____End____*/
 
 
@@ -740,6 +742,7 @@ header {
     transform: translateY(0);
     opacity: 1;
 }
+
 /* show box when page is loading ___End___ */
 
 .general-box-companies {
@@ -956,11 +959,8 @@ header {
     padding: 15px;
     z-index: 1;
     background: #02022e;
-    background: 
-    linear-gradient(
-        0deg,rgb(0 0 0 / 70%) 
-        10%, rgb(255 255 255 / 0%) 100%
-    );
+    background:
+        linear-gradient(0deg, rgb(0 0 0 / 70%) 10%, rgb(255 255 255 / 0%) 100%);
     opacity: 0;
     visibility: hidden;
 }
@@ -993,7 +993,8 @@ header {
     translate: -50% 0;
     opacity: 1;
     visibility: visible;
-} 
+}
+
 /* Accorion boxs for news section ____End____ */
 
 
@@ -1030,6 +1031,7 @@ header {
 :host {
     --swiper-theme-color: #000;
 }
+
 /* Swiper slider bullet   ___End___ */
 
 
@@ -1163,4 +1165,51 @@ header {
     .main-box-search .Mybutton {
         width: 90%;
     }
+
+    .general-box-companies {
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .general-box-companies .title-companies h4{
+        width: 55%;
+        font-size: 21px;
+        font-weight: 500;
+    }
+    .general-box-companies .title-companies a {
+        width: 43%;
+        font-size: 15px;
+    }
+
+    .general-box-companies .title-companies a h6{
+        font-weight: 500;
+    }
+
+    .main-box-companies {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main-box-companies .boxs-companies {
+        width: 100%;
+        height: 1150px;
+    }
+
+    .box-company .image-logo img {
+        width: 29%;
+        height: 100%;
+        margin-top: 5px;
+    }
+
+    .main-box-companies .image-companies {
+        width: 100%;
+    }
+
 }

@@ -854,7 +854,7 @@ header {
 
 #section-news {
     width: 100%;
-    height: 800px;
+    height: auto;
 }
 
 .main-box-news {
@@ -880,6 +880,11 @@ header {
 .main-box-news .image-news img {
     width: 100%;
     height: 99%;
+}
+
+.main-box-img {
+    width: 100%;
+    height: 100%;
 }
 
 .boxs-news {
@@ -1175,17 +1180,18 @@ header {
         flex-wrap: wrap;
     }
 
-    .general-box-companies .title-companies h4{
+    .general-box-companies .title-companies h4 {
         width: 55%;
         font-size: 21px;
         font-weight: 500;
     }
+
     .general-box-companies .title-companies a {
         width: 43%;
         font-size: 15px;
     }
 
-    .general-box-companies .title-companies a h6{
+    .general-box-companies .title-companies a h6 {
         font-weight: 500;
     }
 
@@ -1212,4 +1218,53 @@ header {
         width: 100%;
     }
 
+    .main-box-news {
+        width: 90%;
+        height: auto;
+        margin-bottom: 100px;
+        padding-bottom: 40px;
+    }
+
+    .main-box-news .title-news {
+        width: 100%;
+        height: 120px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-box-news .image-news {
+        width: 100%;
+        height: 291px;
+    }
+
+    .main-box-img {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .main-box-news .boxs-news {
+        width: 100%;
+        height: 1950px;
+    }
+
+    .main-box-news .boxs-news .accordion {
+        width: 100%;
+        height: 85%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .swiper-box {
+        margin-top: 100px;
+        margin-bottom: -100px;
+    }
+
+    .boxs-news .accordion li {
+        width: 90%;
+        height: 250px;
+        margin: 25px 35px;
+    }
 }

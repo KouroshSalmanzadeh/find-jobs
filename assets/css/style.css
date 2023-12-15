@@ -1039,18 +1039,78 @@ header {
 
 /* Swiper slider bullet   ___End___ */
 
+/* Footer  ___Start___ */
+footer {
+    width: 100%;
+    height: 500px;
+    background: url(../img/footer.gif) center no-repeat;
+    margin-top: 50px;
+    position: relative;
+}
 
+.back-cover {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(30, 48, 80, 0.8);
+    position: absolute;
+}
 
+footer .Container {
+    height: 100%;
+}
 
+footer .main-box-footer {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
+footer .main-box-footer .contact-us {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
 
+footer .main-box-footer .contact-us .hover-green {
+    color: white;
+    transition: var(--tranisition);
+}
 
+footer .main-box-footer .contact-us .hover-green:hover {
+    color: var(--green-color);
+}
 
+footer .main-box-footer .contact-us .social-media-footer {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
 
+footer .main-box-footer .list-page {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+footer .main-box-footer .list-page ul li {
+    margin: 12px 0;
+}
 
+footer .main-box-footer .list-page ul li a {
+    color: #cbcbcb;
+    transition: var(--tranisition);
+}
 
-
+footer .main-box-footer .list-page ul li a:hover {
+    color: var(--green-color);
+}
 
 
 

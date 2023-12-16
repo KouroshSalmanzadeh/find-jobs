@@ -1046,6 +1046,7 @@ footer {
     background: url(../img/footer.gif) center no-repeat;
     margin-top: 50px;
     position: relative;
+    color: white;
 }
 
 .back-cover {
@@ -1055,8 +1056,8 @@ footer {
     position: absolute;
 }
 
-footer .Container {
-    height: 100%;
+footer div:nth-child(2) {
+    height: 85%;
 }
 
 footer .main-box-footer {
@@ -1112,7 +1113,18 @@ footer .main-box-footer .list-page ul li a:hover {
     color: var(--green-color);
 }
 
+footer hr.hr-footer {
+    border: 1px solid #00ff72ab;
+    position: relative;
+}
 
+footer .Container .copy-right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 

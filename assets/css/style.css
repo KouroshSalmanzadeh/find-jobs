@@ -1339,4 +1339,49 @@ footer .Container .copy-right {
         height: 250px;
         margin: 25px 35px;
     }
+
+    footer {
+        height: 800px;
+        background: url(../img/footer.gif) center no-repeat;
+        background-size: contain;
+    }
+
+    footer .back-cover {
+        height: 800px;
+    }
+
+    footer div:nth-child(2) {
+        height: 90%;
+    }
+
+    footer .main-box-footer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    footer .main-box-footer .list-page {
+        width: 90%;
+        height: 60%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer .main-box-footer .contact-us {
+        width: 90%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+    }
+
+    footer .main-box-footer .contact-us .social-media-footer {
+        width: 50%;
+    }
+
+    footer .second-container {
+        height: 9% !important;
+    }
 }

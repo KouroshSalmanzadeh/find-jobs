@@ -60,6 +60,18 @@ body {
 
 .nav {
     background-color: var(--green-color);
+    position: fixed;
+    z-index: 1000;
+    overflow: hidden;
+    transition: all ease 0.3s;
+    top: 0;
+}
+
+.hide-nav {
+    top: -60px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.3s;
 }
 
 .sidenav {
@@ -841,6 +853,11 @@ header {
     height: 100%;
     border: 1px solid var(--grey-background);
     border-radius: 15px;
+}
+
+.box-company:hover .image-logo img:nth-child(1), .box-company:hover .image-logo img:nth-child(4) {
+    border: 1px solid #a7a7a7;
+    transition: all .3s ease;
 }
 
 .box-company .content-box-company {

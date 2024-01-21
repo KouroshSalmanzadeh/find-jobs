@@ -57,16 +57,30 @@ function loadPage() {
 function Myswiper() {
   const swipers = document.querySelectorAll(".swiper-slide");
 
-  function show (elements) {
+  function show(elements) {
     elements = elements.length ? elements : [elements];
     for (let i of elements) {
       i.addEventListener('click', function () {
-          i.classList.add('swiper-pagination-bullet-active');
+        i.classList.add('swiper-pagination-bullet-active');
       });
-      }
     }
-    show(swipers);
-  };
+  }
+  show(swipers);
+};
 
 
+// Hide and show navbar when Scroll
+let prevScrollPos = window.pageYOffset;
+let navbar = document.querySelector("nav");
 
+window.onscroll = function () {
+  let currentScrollPos = window.pageYOffset;
+
+  if (prevScrollPos > currentScrollPos) {
+    navbar.classList.remove("hide-nav");
+  } else {
+    navbar.classList.add("hide-nav");
+  }
+
+  prevScrollPos = currentScrollPos;
+};

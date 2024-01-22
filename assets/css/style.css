@@ -558,7 +558,7 @@ header {
 
 .info-category {
     height: auto;
-    margin: 70px 0;
+    margin: 40px 0;
 }
 
 .main-box-header {
@@ -585,7 +585,7 @@ header {
 .content-header {
     float: right;
     width: 550px;
-    height: 500px;
+    height: 650px;
     margin-top: 100px;
     padding: 15px 50px;
     border-radius: 20px;
@@ -618,7 +618,7 @@ header {
 
 .main-box-search {
     width: 100%;
-    height: 30%;
+    height: 50%;
     background-color: var(--blue-color);
     border-radius: 20px;
     display: flex;
@@ -627,12 +627,107 @@ header {
     justify-content: space-evenly;
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0.2s ease 0s, opacity 0.4s linear 0s;
+    transition: all .5s ease;
+    transition-delay: .8s;
 }
 
 .content-header:hover .main-box-search {
     visibility: visible;
     opacity: 1;
+    transition: all .5s ease;
+}
+
+.content-header .main-box-search .main-selector {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-box-search .city-selector,
+.main-box-search .country-selector {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.main-box-search .city-selector input,
+.main-box-search .country-selector input {
+    width: 260px;
+    border: none;
+    box-shadow: none !important;
+    z-index: 2;
+    background-color: var(--blue-color);
+    border-radius: 15px;
+    font-family: inherit;
+    transition: all ease .5s;
+    margin: 2px;
+    padding: 0 10px;
+    color: #ddd;
+}
+
+.main-box-search .city-selector::before,
+.main-box-search .country-selector::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius: 15px;
+    background-color: var(--green-color);
+    top: 0;
+    left: 83px;
+    z-index: 0;
+    transition: all ease 0.8s;
+}
+
+.main-box-search .city-selector:hover::before,
+.main-box-search .country-selector:hover::before {
+    width: 284px;
+    height: 100%;
+    transition: all ease 0.8s;
+}
+
+.main-box-search .city-selector input::placeholder,
+.main-box-search .country-selector input::placeholder {
+    text-align: center;
+    color: #bbbbbbc8;
+}
+
+.main-box-search .city-selector span,
+.main-box-search .country-selector span {
+    position: absolute;
+    width: 80px;
+    text-align: center;
+    padding: 4px 12px;
+    font-family: inherit;
+    top: 8px;
+    left: -34px;
+    border-radius: 30px;
+    background: linear-gradient(270deg, #00cc99 5%, transparent 88%);
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-in .5s;
+}
+
+.main-box-search .country-selector span {
+    transition-delay: .3s;
+}
+
+.content-header:hover .main-box-search .city-selector span,
+.content-header:hover .main-box-search .country-selector span {
+    opacity: 1;
+    visibility: visible;
+    left: -4px;
+    transition: all ease-out .5s;
+}
+
+.content-header:hover .main-box-search .city-selector span {
+    transition-delay: .3s;
 }
 
 .content-header h5 {
@@ -855,7 +950,8 @@ header {
     border-radius: 15px;
 }
 
-.box-company:hover .image-logo img:nth-child(1), .box-company:hover .image-logo img:nth-child(4) {
+.box-company:hover .image-logo img:nth-child(1),
+.box-company:hover .image-logo img:nth-child(4) {
     border: 1px solid #a7a7a7;
     transition: all .3s ease;
 }

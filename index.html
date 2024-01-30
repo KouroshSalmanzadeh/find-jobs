@@ -22,7 +22,7 @@
 
 <body onload="loadPage()">
 
-  <header>
+  <header id="header">
 
     <!-- Navbar section __________Start______ --->
     <nav class="nav z-depth-3">
@@ -67,7 +67,6 @@
       </li>
     </ul>
     <!-- Navbar section __________End______ --->
-
 
     <!-- Header section __________Start______ --->
     <div class="Container">
@@ -120,6 +119,8 @@
 
     </div>
     <!-- Header section __________Start______ --->
+
+    <!-- <div class="halftone-circle"></div> -->
   </header>
 
   <section class="info-category light-grey-background">
@@ -417,6 +418,15 @@
     </div>
   </section>
   <!-- Section news  ____End____ -->
+
+  <div class="scroll-up-btn" onmouseenter="bounceBtn('active')" onmouseleave="bounceBtn('remove')">
+    <button>
+      <a href="#header">
+        <i class="fa-solid fa-circle-arrow-up fs-50 green-color"></i>
+        <span class="blue-color f-bold">back to up</span>
+      </a>
+    </button>
+  </div>
 
   <footer>
     <div class="back-cover"></div>

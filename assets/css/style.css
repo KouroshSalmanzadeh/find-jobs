@@ -39,6 +39,10 @@
     background-color: #009f77;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'quicksand';
 }
@@ -871,8 +875,8 @@ header {
     color: var(--grey-background);
     transition: all .5s ease-in-out !important;
 }
-
 /* Search box  ___End____ */
+
 
 .main-box-search .Mybutton {
     width: 70%;
@@ -885,6 +889,27 @@ header {
 .main-box-search:hover .content-header {
     background-color: var(--grey-background);
 }
+
+/* halftone circle ___Start___ */
+.halftone-circle {
+    position: absolute;
+    width: 250px;
+	height: 100vh;
+    top: 0;
+	background: rgb(255 255 255 / 49%);
+	filter: contrast(10);
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        background: radial-gradient(#000, transparent) 0 0/ 1em 1em space;
+        mask: linear-gradient(red, rgba(0, 0, 0, 0.45));;
+    }
+}
+/* halftone circle ___End___ */
+
 
 /* Show box when scrolling  ____Start____*/
 .reveal {
@@ -1216,8 +1241,54 @@ header {
 :host {
     --swiper-theme-color: #000;
 }
-
 /* Swiper slider bullet   ___End___ */
+
+/* Scrll up button ___Start___ */
+.scroll-up-btn {
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+    width: fit-content;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease .5s;
+}
+
+.scroll-up-btn a {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.scroll-up-btn button {
+    border: none;
+    background: none;
+}
+
+.scroll-up-btn button i {
+    z-index: 10;
+}
+
+.scroll-up-btn button span{
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all ease .5s;
+}
+
+.scroll-up-btn:hover span {
+    display: inline-block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-10px);
+}
+.active-scroll-up {
+    opacity: 1;
+    visibility: visible;
+    bottom: 30px;
+}
+/* Scrll up button ___End___ */
 
 /* Footer  ___Start___ */
 footer {

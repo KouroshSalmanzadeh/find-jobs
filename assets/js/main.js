@@ -84,3 +84,48 @@ window.onscroll = function () {
 
   prevScrollPos = currentScrollPos;
 };
+
+// Button Scroll to up
+function bounceBtn(type) {
+  let typeOf = type;
+  let backUpBtn = document.querySelector(".scroll-up-btn i");
+
+  if (typeOf == 'active') {
+    backUpBtn.classList.add("fa-bounce");
+  } else {
+    backUpBtn.classList.remove("fa-bounce");
+  };
+};
+
+let prevScrollPosition = window.pageYOffset;
+let scrollUpBtn = document.querySelector(".scroll-up-btn");
+
+function activeScrollBtn() {
+  let currentScrollPosition = window.pageYOffset;
+
+  if (prevScrollPosition < currentScrollPosition) {
+    scrollUpBtn.classList.remove("active-scroll-up");
+  } else {
+    scrollUpBtn.classList.add("active-scroll-up");
+  }
+
+  prevScrollPosition = currentScrollPosition;
+  
+  if (currentScrollPosition < 200) {
+    scrollUpBtn.classList.remove("active-scroll-up");
+  }else if (currentScrollPosition > 2700) {
+    scrollUpBtn.classList.add("active-scroll-up");
+  }
+};
+window.addEventListener("scroll", activeScrollBtn);
+
+// 
+// window.addEventListener('scroll', function() {
+//   var scrollPosition = window.scrollY;
+
+//   if (scrollPosition < 300) {
+//     scrollUpBtn.classList.remove('active-scroll-up');
+//   } else {
+//     scrollUpBtn.classList.add('active-scroll-up');
+//   }
+// });
